@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+#header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:white;
+    box-shadow:0 5px 15px grey;
+    z-index:999;
+    position:sticky;
+    top:0;
+    height:75px;
+}
+
+#navbar
+{
+    display:flex;
+    align-items:center;
+    position:sticky;
+    justify-content:center;
+
+}
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+
+}
+#navbar li a
+{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    color:black;
+    
+}
+#navbar li a:hover{
+    color:blue;
+    text-decoration:none;
+    transition: 0.3s ease;
+   
+}
+#navbar li a::before{
+  pointer-events: none
+}
+
+.button1{
+    background-color:transparent;
+    color:blue;
+    border:4;
+    border-color:black;
+    border-radius:40px;
+    padding:10px    ;
+    font-size:20px;
+    cursor:pointer;
+    text-decoration:none;
+    margin: 5px;
+}
+
+.dropdown {
+  float: left;
+
+}
+
+.dropdown .dropbtn {
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    color:black;
+    transition: 0.3s ease;
+    border:none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar li a:hover, .dropbtn:hover  {
+  color:blue;
+  border: none;
+  outline: none;
+}
+
+.dropdown-content {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-weight: 600;
+}
+
+.dropdown-content a:hover {
+  background-color: lightblue;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.inner-banner {
+        background: linear-gradient(0deg,#2b5a89,#2da585);
+        position: relative;
+        width: 100%;
+        height:50px;
+}
+.inner-banner .container {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+.container {
+    padding: 0 35px;
+}
+ul.breadcrumb {
+    background-color: hsla(0,0%,100%,0);
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+#feature
+{
+    background-image:url("TOM.jpg");
+    height:60%;
+    width:100%;
+    background-size:cover;
+    background-position:top 25% right 0;
+    color:white;
+    padding:40px 80px;
+    display:flex;
+    flex-direction:column;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+
+}
+.dialogue p{
+    text-align: right;
+    color: white;
+}
+
+/* #TallyonMobile{
+    color:#3c3c3c; 
+    padding:0 0 10px; 
+    margin: 0 0 10px;
+}  */
+
+#hero{
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#hero p{
+    padding-left: 10px;
+}
+#hero h4, #hero p{
+    padding: 5px;
+}
+.hero2{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    width: 800px;
+}
+.hero1{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.hero1 img{
+    height: 350px;
+}
+.usp{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-top: 60px;
+    column-gap: 40px;
+    line-height: 25px;
+
+}
+.usp .box{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 8px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.usp .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.usp .box .content{
+    padding: 7%;
+}
+.usp .box .content .ol{
+    padding: 7%;
+}
+.usp{
+    background-attachment: fixed;
+    background-color: #002e5b;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQzpLTBnSKnpFxlyGmUdHb8MwTX_twh_Xpg&usqp=CAU);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    box-shadow: 10px 10px 50px white inset;
+}
